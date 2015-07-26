@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0F5BDEED-1871-4C44-9D74-14200F08E9F8}</ProjectGuid>
+    <RootNamespace>Library</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="scr\library\AllocateHierarchy.cpp" />
+    <ClCompile Include="scr\library\DrawProcess.cpp" />
+    <ClCompile Include="scr\library\FuncDraw.cpp" />
+    <ClCompile Include="scr\library\FreeDx.cpp" />
+    <ClCompile Include="scr\library\GameMain.cpp" />
+    <ClCompile Include="scr\library\GameMainManage.cpp" />
+    <ClCompile Include="scr\library\gameObject.cpp" />
+    <ClCompile Include="scr\library\joystick_XInput.cpp" />
+    <ClCompile Include="scr\library\KeyProcess.cpp" />
+    <ClCompile Include="scr\library\read_file.cpp" />
+    <ClCompile Include="scr\library\RenderManage.cpp" />
+    <ClCompile Include="scr\library\Scene.cpp" />
+    <ClCompile Include="scr\library\SceneManage.cpp" />
+    <ClCompile Include="scr\library\MouseProcess.cpp" />
+    <ClCompile Include="scr\library\Device.cpp" />
+    <ClCompile Include="scr\library\Proc.cpp" />
+    <ClCompile Include="scr\library\RenderProcess.cpp" />
+    <ClCompile Include="scr\library\TextureManage.cpp" />
+    <ClCompile Include="scr\library\ViewManage.cpp" />
+    <ClCompile Include="scr\library\Window.cpp" />
+    <ClCompile Include="scr\library\WinMain.cpp" />
+    <ClCompile Include="scr\scr\Battle.cpp" />
+    <ClCompile Include="scr\scr\BattleObject.cpp" />
+    <ClCompile Include="scr\scr\Item.cpp" />
+    <ClCompile Include="scr\scr\Logo.cpp" />
+    <ClCompile Include="scr\scr\LogoObject.cpp" />
+    <ClCompile Include="scr\scr\Player.cpp" />
+    <ClCompile Include="scr\scr\Result.cpp" />
+    <ClCompile Include="scr\scr\Select.cpp" />
+    <ClCompile Include="scr\scr\Title.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scr\library\AllInput.h" />
+    <ClInclude Include="scr\library\AllocateHierarchy.h" />
+    <ClInclude Include="scr\library\device.h" />
+    <ClInclude Include="scr\library\DrawFunc.h" />
+    <ClInclude Include="scr\library\FreeDX.h" />
+    <ClInclude Include="scr\library\gameObject.h" />
+    <ClInclude Include="scr\library\graphic.h" />
+    <ClInclude Include="scr\library\Input.h" />
+    <ClInclude Include="scr\library\joystick_XInput.h" />
+    <ClInclude Include="scr\library\Key.h" />
+    <ClInclude Include="scr\library\KeyFunc.h" />
+    <ClInclude Include="scr\library\lib_head.h" />
+    <ClInclude Include="scr\library\main.h" />
+    <ClInclude Include="scr\library\read_file.h" />
+    <ClInclude Include="scr\library\RenderManage.h" />
+    <ClInclude Include="scr\library\Mouse.h" />
+    <ClInclude Include="scr\library\2D_Object.h" />
+    <ClInclude Include="scr\library\MouseFunc.h" />
+    <ClInclude Include="scr\library\Scene.h" />
+    <ClInclude Include="scr\library\SceneManage.h" />
+    <ClInclude Include="scr\library\Texture.h" />
+    <ClInclude Include="scr\library\TitleObject.h" />
+    <ClInclude Include="scr\library\Window.h" />
+    <ClInclude Include="scr\scr\Battle.h" />
+    <ClInclude Include="scr\scr\BattleObject.h" />
+    <ClInclude Include="scr\scr\Item.h" />
+    <ClInclude Include="scr\scr\Logo.h" />
+    <ClInclude Include="scr\scr\LogoObject.h" />
+    <ClInclude Include="scr\scr\Player.h" />
+    <ClInclude Include="scr\scr\Result.h" />
+    <ClInclude Include="scr\scr\ResultObject.h" />
+    <ClInclude Include="scr\scr\Select.h" />
+    <ClInclude Include="scr\scr\SelectObject.h" />
+    <ClInclude Include="scr\scr\Title.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
